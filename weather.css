@@ -9,8 +9,8 @@ body{
     margin:0px;
     width:100%;
     position:relative;
-    border: 3px solid black;
-    border-radius: 5px;    
+    padding-bottom:50px;
+       
 }
 
 #headerimg{
@@ -54,6 +54,7 @@ h2{
     text-align:right;
     margin:0px;
     background-color:lightgoldenrodyellow;
+    padding-right:20px;
 }
 
 
@@ -66,11 +67,13 @@ h2{
     padding-left: 10px;
     padding-right: 10px;
     padding-top:0px;
-    padding-bottom:0px;
     margin:0px;
     border: 3px solid black;
     border-radius: 5px;
         
+}
+#lastp{
+    margin-bottom:50px
 }
 .leftcol{
     display:inline-block;
@@ -89,13 +92,11 @@ h2{
     margin:1px;
     border: 3px solid black;
     border-radius: 5px;
-    padding: 2px;
-    
-    
+    padding: 2px;    
 }
 .section3{
     /*display:inline-block;*/
-    width:100%;
+    width:99%;
     text-align:center;
     background-color: skyblue;
     margin:0px;
