@@ -1,7 +1,5 @@
 
-body{
-    position:absolute;
-}
+
 /*This is the sun image*/
 #sun {
     /*position: relative;
@@ -227,7 +225,6 @@ footer{
     font-size:125%;
     margin-bottom:0px;
     padding: 0px;
-    vertical-align: middle;
     }
     .section3{
     width:99%;
@@ -275,7 +272,6 @@ footer{
     width:100%;
     font-size:250%;
     background-color: lightgoldenrodyellow
-    
-}
+    }
     
 }
