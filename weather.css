@@ -61,15 +61,15 @@ h2{
 .section1{
     display:inline-block;
     width:48%;
-    background-color: skyblue;
+    /*background-color: skyblue;*/
     text-align: center;  
     font-size:480%;
     padding-left: 10px;
     padding-right: 10px;
     padding-top:0px;
     margin:0px;
-    border: 3px solid black;
-    border-radius: 5px;
+    /*border: 3px solid black;
+    border-radius: 5px;*/
         
 }
 #lastp{
@@ -83,22 +83,22 @@ h2{
 .section2{
     display:inline-block;
     width: 100%;
-    background-color: skyblue;
+    /*background-color: skyblue;*/
     /*position: absolute
         top:0em;
         right:.5em*/
     text-align: center;
     font-size:350%;
     margin:1px;
-    border: 3px solid black;
-    border-radius: 5px;
+   /* border: 3px solid black;
+    border-radius: 5px;*/
     padding: 2px;    
 }
 .section3{
     /*display:inline-block;*/
     width:99%;
     text-align:center;
-    background-color: skyblue;
+    /*background-color: skyblue;*/
     margin:0px;
     border:0px;
     font-size:350%;
@@ -106,9 +106,18 @@ h2{
     border-radius: 5px;
     
 }
+.hourlydata{
+    display:none;
+}
 #sketch{
     width:900px;
     height:auto;
+}
+#tabletsketch{
+    display:none;
+}
+#browsersketch{
+    display:none;
 }
 img{
     margin:50px;
@@ -119,5 +128,153 @@ footer{
     width:100%;
     font-size:350%;
     background-color: lightgoldenrodyellow
+    
+}
+
+
+/*********************TABLET SCREEN*******************************************/
+
+
+@media screen and (max-width: 1024px){
+    .hourlydata{
+        display: inline-block;
+        font-size:350%;
+        width=99%;
+    }
+    /*heading for hourly forecast*/
+        #hourlyfc{
+        width:99%;
+        color:darkblue;
+        font-size: 125%;
+        text-align:center;
+        margin:0px;
+        background-color:lightgoldenrodyellow;
+        padding-right:20px;
+    }
+    #paragraphs{
+        font-size:100%;
+        
+    }
+    #hfOne{
+        display:inline-block;
+        width: 48%;
+        text-align: center;  
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top:0px;
+        margin:0px;
+        float:left;
+         }
+    #hfTwo{
+        display:inline-block;
+        width: 48%;
+        text-align: center;
+        margin:1px;
+        padding: 2px;
+        float:left;
+        }
+    #sketch{
+        display:none;
+        }
+    #tabletsketch{
+        display:inline-block;
+        }
+    }
+
+
+/*********************DESKTOP SCREEN*******************************************/
+
+
+@media screen and (min-width:1025px){
+    #sun {
+    margin:0px;
+    width:60%;
+    position:relative;
+    padding-bottom:50px;
+    padding-left:90px;
+    padding-top:50px;
+    }
+    h2{
+        font-size: 2em;
+        width:100%;
+        text-align:right;
+    }
+     .section1{
+    display:inline-block;
+    width:48%;
+    text-align: center;  
+    font-size:280%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:0px;
+    margin-bottom:0px;
+    border: 3px solid black;
+    border-radius: 5px;
+        
+    }
+    #lastp{
+    margin-bottom:50px
+    }
+    .leftcol{
+    display:inline-block;
+    width:48%;
+    height:900px;
+    }
+    .section2{
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+    font-size:125%;
+    margin-bottom:0px;
+    padding: 0px;    
+    }
+    .section3{
+    width:99%;
+    text-align:center;
+    margin:0px;
+    border:0px;
+    font-size:150%;
+    border: 3px solid black;
+    border-radius: 5px;
+    }
+  
+    .hourlydata{
+        display: inline-block;
+        font-size:150%;
+        width=99%;
+    }
+    #sketch{
+        display:none;
+        }
+    #tabletsketch{
+        display:none;
+        }
+     #hfOne{
+        display:inline-block;
+        width: 48%;
+        /*text-align: center;  
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top:0px;
+        margin:0px;*/
+       
+         }
+    #hfTwo{
+        display:inline-block;
+        width: 48%;
+        /*text-align: center;
+        margin:0px;
+        padding: 2px;*/
+        }
+     }
+    #browsersketch{
+        display:inline-block;
+        }
+    footer{
+    width:100%;
+    font-size:250%;
+    background-color: lightgoldenrodyellow
+    
+}
     
 }
