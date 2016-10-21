@@ -226,7 +226,8 @@ footer{
     text-align: center;
     font-size:125%;
     margin-bottom:0px;
-    padding: 0px;    
+    padding: 0px;
+    vertical-align: middle;
     }
     .section3{
     width:99%;
