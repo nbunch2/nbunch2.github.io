@@ -1,7 +1,146 @@
+/*body{
+    display:flex;
+    flex-direction:column;
+    
+}*/
+body{
+
+}
+header{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+header > h1{
+    background-color:lightgoldenrodyellow;
+    width:100%;
+    justify-content: center;
+    width:100%;
+    background-color:gainsboro;
+    color: lightgoldenrodyellow;
+    padding: 10px;
+    margin:0px;
+}
+header{
+    width:100%;
+}
+nav > ul{
+    width:100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 0 0;
+    justify-content:space-around;
+    padding:10px;
+    background-color:lightgoldenrodyellow;
+}
+h2{
+    color:gainsboro;
+    text-align:right;
+    font-size:150%;
+}
+#sun{
+    width:100%;
+}
+.leftcol{
+    width:49%;
+}
+.section1{
+    width:49%;
+    font-size:150%;
+}
+#middle{
+    display:flex;
+    text-align:center;
+    
+}
+.section3{
+    font-size:150%;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    color:grey;
+    padding:10px;
+    width:100%;
+}
+#hourlydata{
+    display:none;
+}
+#browsersketch{
+    display:none;
+}
+#tabletsketch{
+    display:none;
+}
+.wireframes{
+    display:flex;
+    flex-direction:column;
+    max-width:450px;
+}
+
+/*********************TABLET SCREEN*******************************************/
 
 
+@media screen and (min-width: 700px){
+    .section1{
+        font-size:250%;
+    }
+    #hourlydata{
+        display:flex;
+        flex-direction:column;
+    }
+    #sketch{
+        display:none;
+    }
+    #browsersketch{
+        display:none;
+    }
+    #tabletsketch{
+        display:flex;
+    }
+    #hourlydata{
+        width:100%;
+        padding:10px;
+        margin-bottom:10px;
+    }
+    table{
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    h2{
+        font-size:250%;
+    }
+    
+}
+/******************************DESKTOP SCREEN*******************************************/
 
 
+@media screen and (min-width:1025px){
+   
+    body{
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+    .section1{
+        font-size:350%;
+    }
+    #sketch{
+        display:none;
+    }
+    #tabletsketch{
+        display:none;
+    }
+    #browsersketch{
+        display:flex;
+    }
+    
+    
+    
+    
+    
+    
+}
 
 /*This is the sun image*/
 
