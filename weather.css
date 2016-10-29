@@ -42,6 +42,9 @@ h2{
 #sun{
     width:100%;
 }
+#precip{
+    font-size:100%;
+}
 .leftcol{
     width:49%;
 }
@@ -97,6 +100,9 @@ h2{
     #tabletsketch{
         display:flex;
     }
+    #precip{
+    font-size:100%;
+    }
     #hourlydata{
         width:100%;
         padding:10px;
@@ -123,7 +129,10 @@ h2{
         margin-right: 125px;
     }
     .section1{
-        font-size:350%;
+        font-size:250%;
+    }
+    #precip{
+    font-size:150%;
     }
     #sketch{
         display:none;
