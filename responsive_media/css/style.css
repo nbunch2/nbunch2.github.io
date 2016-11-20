@@ -113,9 +113,11 @@ h1 {
 
 .featured-image {
 	margin: 1em 0;
+    
 }
 
-.featured-image img {
+.featured-image img,
+.feature-image figure{
 	display: block;
 	width: 100%;
 	height: auto;
