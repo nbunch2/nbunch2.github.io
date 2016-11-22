@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'> <meta name="viewport" content="width=device-width">
+        <title>Greenville Weather</title>
+        <link href="weather.css" type="text/css" rel="stylesheet" media="screen">
+        <!--inform the reader about the page, can include the site information-->
+    </head>
+    
+    <body>
+        <div>
+        <header id="page-header"></header>
+        <!--<h1>Weather</h1>-->
+            <noscript> JavaScript is not enabled. For Navigation visit the <a href="sitemap.html">Site Map</a></noscript>
+            
+        <nav id="page-nav">
+           <!-- <ul>
+            <li><a href="greenvilleweatherpage.html"> Greenville</a></li>
+            <li><a href="#"> Springfield</a> </li>
+            <li><a href="franklinweatherpage.html">Franklin</a> </li>
+            </ul> -->
+            <noscript> JavaScript is not enabled. For Navigation visit the <a href="sitemap.html">Site Map</a></noscript>
+        </nav>
+            
+        </div>
+      
+        <main>
+           <section class="weather-container">
+               <div id="cover">
+                   <div id="status">Loading...</div>
+                </div>
+                <h2 id=cityDisplay></h2>
+                <h2 id="currentTemp"></h2>
+                <h2 id="add1"></h2>
+                <div id="middle">   
+        <div class="leftcol">
+            
+            <section class="section2">
+                
+            </section>
+        </div>
+        <section class="section1">
+    
+            <p id='lastp' id="sum"></p>
+        </section>
+                </div>
+        <section class="section3">
+            <ul id="current_conditions">
+                <li id="summary"></li>
+                <li id="add2"></li>
+                <li id="add3"></li>
+        </ul>
+        </section>
+            </section>
+        </main>
+        <footer id="page-footer">
+        <!--<P>For more information, go outside!</P>-->
+            <noscript> JavaScript is not enabled. For Navigation visit the <a href="sitemap.html">Site Map</a></noscript>
+        </footer>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="modules.js"></script>
+        <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="remote_wu2.js"></script>
+    </body>
+</html>

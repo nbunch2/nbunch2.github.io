@@ -57,6 +57,9 @@ h2{
     text-align:center;
     
 }
+section>ul>li{
+    list-style-type: none;
+}
 .section3{
     font-size:150%;
     text-align: center;
@@ -79,6 +82,7 @@ h2{
     flex-direction:column;
     max-width:450px;
 }
+
 
 /*********************TABLET SCREEN*******************************************/
 

@@ -33,16 +33,17 @@ $(function () {
     var addone = parsed_json['current_observation']['local_time_rfc822']; 
       var addtwo = parsed_json['current_observation']['icon']; 
       var addthree = parsed_json['current_observation']['precip_today_in']; 
-  alert("Current temperature in " + location + "," + state + " is: " + temp_f);
+    alert("Current temperature in " + location + "," + state + " is: " + temp_f);
   
-    
-    $('#cityDisplay').html(location + "," + state);
+    $('#city').html(location);
+    $('#state').html(state);
+    $('#cityDisplay').html(location + ", " + state);
     $('title').html(location + "," + state);
     $('#currentTemp').html(Math.round(temp_f) + "&#176" + "F");
       $('#summary').html(sum);
       $('#add1').html("Local Time: " + addone);
-      $('#add2').html("Current Weather" + addtwo);
-      $('#add3').html("Precipitation Today in Inches " + addthree);
+      $('#add2').html("Current Weather: " + addtwo);
+      $('#add3').html("Precipitation Today in Inches: " + addthree);
     
       
       
