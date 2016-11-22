@@ -28,8 +28,24 @@ $(function () {
   success : function(parsed_json) {
   var location = parsed_json['location']['city'];
   var temp_f = parsed_json['current_observation']['temp_f'];
-  alert("Current temperature in " + location + " is: " + temp_f);
+      var state = parsed_json['location']['state'];
+   var sum = parsed_json['current_observation']['weather']; 
+    var addone = parsed_json['current_observation']['local_time_rfc822']; 
+      var addtwo = parsed_json['current_observation']['icon_url']; 
+      var addthree = parsed_json['current_observation']['precip_today_in']; 
+  alert("Current temperature in " + location + "," + state + " is: " + temp_f);
   
+    
+    $('#cityDisplay').html(location + "," + state);
+    $('title').html(location + "," + state);
+    $('#currentTemp').html(Math.round(temp_f) + "&#176" + "F");
+      $('#summary').html(sum);
+      $('#add1').html(addone);
+      $('#add2').html(addtwo);
+      $('#add3').html(addthree);
+    
+      
+      
   }
 }); 
 
