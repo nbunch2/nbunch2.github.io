@@ -40,9 +40,9 @@ $(function () {
     $('title').html(location + "," + state);
     $('#currentTemp').html(Math.round(temp_f) + "&#176" + "F");
       $('#summary').html(sum);
-      $('#add1').html(addone);
-      $('#add2').html(addtwo);
-      $('#add3').html(addthree);
+      $('#add1').html("Local Time: " + addone);
+      $('#add2').html("Current Weather" + addtwo);
+      $('#add3').html("Precipitation Today in Inches" + addthree);
     
       
       
