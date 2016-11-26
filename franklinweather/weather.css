@@ -54,9 +54,13 @@ h2{
 }
 #middle{
     display:flex;
-    text-align:center;
-    
+    text-align:center;  
 }
+
+#current_conditions{
+    text-transform:capitalize;
+}  
+
 section>ul>li{
     list-style-type: none;
 }

@@ -51,6 +51,12 @@ body {
   font-size: .75em;
   margin: 0 0 0 1em;
 }
+#summary{
+    text-transform:capitalize;
+}
+#add2{
+    text-transform:capitalize;
+}
 
 
 /*The page navigation*/
