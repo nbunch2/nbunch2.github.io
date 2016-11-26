@@ -23,7 +23,7 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-  url : "http://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/" + lat + ',' + long + ".json",
+  url : "https://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/" + lat + ',' + long + ".json",
   dataType : "jsonp",
   success : function(parsed_json) {
   var location = parsed_json['location']['city'];
