@@ -1,0 +1,66 @@
+body{
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-right: 5px;  
+    margin-bottom: 0px;
+}
+
+/*.page-header {
+    
+    background-size:contain, cover;
+    background-position:right, center;
+    
+    background-image: url(/save/images/logo_50.png),
+    url(/save/images/header_400.jpg);
+    
+    background-repeat: no-repeat;
+    
+} */
+
+#navigation{
+    width:100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 0 0;
+    justify-content:space-around;
+    padding:10px;
+    background-color:
+}
+
+
+
+/**************** Gallery-Specific CSS ****************/
+.galleftcol{
+    width: 48%;
+    margin: 5px;
+}
+
+.galrightcol{
+    width: 48%;
+    margin: 5px;
+}
+.galleryimg{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: flex-end; 
+}
+/************************************** Tablet View **************************************/
+
+
+
+
+
+
+/************************************** Desktop View **************************************/
+@media screen and (min-width:1025px){
+    
+    body{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    
+    
+}
+    
