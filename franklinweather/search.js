@@ -1,10 +1,4 @@
-$('#query').keyup(function(){
-  // All code will be inside of this block
-     var value = $('#query').val();
-    var rExp = new RegExp(value, "i");
-      $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
-          console.log(data);
-          $('#query').keyup(function() {
+     $('#query').keyup(function() {
             var value = $('#query').val();
             var rExp = new RegExp(value, "i");
             $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function(data) {
@@ -22,8 +16,8 @@ $('#query').keyup(function(){
             $("#searchResults").html(output); // send results to the page
             }); // end getJSON
           }); // end onkeyup
-      }); // end getJSON
-}); // end keyup
+     
+
         
 
   // A function for changing a string to TitleCase
@@ -35,25 +29,28 @@ $('#query').keyup(function(){
 
 
 // Get weather data from wunderground.com
-function getData(zmw) {
+function getData(input) {
   // Get the data from the wunderground API
   $.ajax({
-    url: "https://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/"
-    + zmw + ".json"
+    url: "https://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/forecast/hourly/q/"
+    + input + ".json"
     , dataType: "jsonp"
     , success: function (data) {
       console.log(data);
       var location = data.location.city + ', ' + data.location.state;
       var temp_f = data.current_observation.temp_f;
-        var time = data.current_observation.locasl_time_rfc822;
+        var high = data["forecast"]["simpleforecast"]["forecastday"]["0"]["high"]["fahrenheit"];
+        var low = data["forecast"]["simpleforecast"]["forecastday"]["0"]["high"]["fahrenheit"];
       console.log('Location is: ' + location);
       console.log('Temp is: ' + temp_f);
+        console.log('Time is: ' + high);
       $("#cityDisplay").text(location);
       $("title").html(location + " | Weather Center");
       $("#currentTemp").html(Math.round(temp_f) + '°');
       $("#summary").text(toTitleCase(data.current_observation.icon));
       $("#cover").fadeOut(250);
-        $("#add1").html(time);
+        $("#add1").html("High is " + high + '°');
+        $('#add2').html("Low is  " + low + '°');
     }
   });
 }
@@ -81,7 +78,7 @@ $("#searchResults").on("click", "a", function (evt) {
   });
 });
 
-$("searchResults").on('click', "a", function myFunction(evt){
+$("#searchResults").on('click', "a", function(evt){
     document.getElementById('ol').style.display="none";
 })
 
