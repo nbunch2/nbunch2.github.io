@@ -2,12 +2,12 @@ $('#query').keyup(function(){
   // All code will be inside of this block
      var value = $('#query').val();
     var rExp = new RegExp(value, "i");
-      $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+      $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
           console.log(data);
           $('#query').keyup(function() {
             var value = $('#query').val();
             var rExp = new RegExp(value, "i");
-            $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function(data) {
+            $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function(data) {
                 console.log(data); // test for JSON received
                 // Begin building output
                 var output = '<ol id="ol">';
@@ -38,7 +38,7 @@ $('#query').keyup(function(){
 function getData(zmw) {
   // Get the data from the wunderground API
   $.ajax({
-    url: "http://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/"
+    url: "https://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/"
     + zmw + ".json"
     , dataType: "jsonp"
     , success: function (data) {
@@ -66,7 +66,7 @@ $("#searchResults").on("click", "a", function (evt) {
   var jsonCity = $(this).text(); // Franklin, etc...
   console.log(jsonCity);
   $.ajax({
-    url: "http://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/"
+    url: "https://api.wunderground.com/api/47d4acfe313b2d41/geolookup/conditions/q/"
     + jsonCity + ".json" 
     , dataType: "json"
     , success: function (data) {
