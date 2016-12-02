@@ -28,10 +28,6 @@ function getData(input) {
 }
 
 
-
-
-
-
 // Intercept the menu link clicks
 $("#page-nav").on("click", "a", function (evt) {
   evt.preventDefault();
@@ -44,7 +40,7 @@ $("#page-nav").on("click", "a", function (evt) {
     , success: function (data) {
       console.log(data);
       console.log(data[jsonCity]);
-      var zip = data[jsonCity].zip;
+      var zip = data[jsonCity];
       console.log(zip);
       getData(zip);
     }
