@@ -45,6 +45,7 @@ function getData(zmw) {
       console.log(data);
       var location = data.location.city + ', ' + data.location.state;
       var temp_f = data.current_observation.temp_f;
+        var time = data.current_observation.locasl_time_rfc822;
       console.log('Location is: ' + location);
       console.log('Temp is: ' + temp_f);
       $("#cityDisplay").text(location);
@@ -52,6 +53,7 @@ function getData(zmw) {
       $("#currentTemp").html(Math.round(temp_f) + '°');
       $("#summary").text(toTitleCase(data.current_observation.icon));
       $("#cover").fadeOut(250);
+        $("#add1").html(time);
     }
   });
 }
