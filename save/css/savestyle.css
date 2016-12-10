@@ -1,19 +1,17 @@
 body{
     width: 100%;
     margin: 0 0 0 0;
-    
-}
+    }
 
+#normalnav{
+    display: none;  
+    }
 
-
-.navigation{
-    display:none;
-    
-}
 
 nav a {
     font-family: "Arial Black", Gadget, sans-serif;
     text-decoration: none;
+    color: white;
     
 }
 
@@ -32,7 +30,7 @@ nav a {
 */
 /* Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #aa0000;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -42,7 +40,7 @@ nav a {
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #002255;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -115,10 +113,42 @@ footer a:link {
 			}
 
 footer a:visited{
-        color
+        color: #002255;
     }
 			
-			
+/****************our story-Specific CSS ****************/	
+
+#houseimg{
+    width: 50%;
+    height: auto;
+}
+
+#formatstory{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+   
+}
+
+.thisdream{
+    width:45%;
+    padding-right: 20px;
+    align-content: center;
+    font-size:30px;
+}
+
+.buy{
+    width: 48%;
+    font-size: 40px;   
+    
+}
+
+.wecan{
+    width: 48%;
+    font-size: 40px;
+}
 
 
 /**************** Gallery-Specific CSS ****************/
@@ -143,7 +173,7 @@ footer a:visited{
 *                                                                                        *
 *                                                                                        *
 *****************************************************************************************/
-@media (min-width: 41.67em) {
+@media (min-width: 700px) {
     body{
         width:90%;
         padding-right: 5%;
@@ -153,12 +183,12 @@ footer a:visited{
     }
 }
 
-      #dropdown{
-        display:none;
-    }
     
+#dropdown{
+    display: none;
+}
     
-    #navigation {
+    #normalnav {
     width: 100%;
     display: flex;
     list-style-type: none;
@@ -166,7 +196,7 @@ footer a:visited{
     justify-content:space-around;
     align-items:center;
     padding:10px;
-    background-color:
+    background-color: #aa0000;
     }
 
     #hover{
@@ -197,13 +227,9 @@ footer a:visited{
 *                                                                                        *
 *                                                                                        *
 *****************************************************************************************/
-@media screen and (min-width:1000px){
+@media screen and (min-width:1025px){
     
-    
-    .dropdown{
-        display:none;
-    }
-    
+     
     
     #navigation {
     width: 100%;
