@@ -1,10 +1,10 @@
 {
-	"TroyHicks":{ 
-		"story": "Arizona",
-		"Height": "6ft"
+	"contact":{ 
+		"story": "Feel Free to contact us if you want to get involved",
+		"video": "Below is a video about our service we did in Mexico"
 	},
-	"Nicole Bunch":{
-	  "City": "Arizona",
-		"Height": "6ft"
+	"information":{
+	  "email": "You can contact us by email troyhicks.gmail.com",
+		"Height": ""
 	}
 }

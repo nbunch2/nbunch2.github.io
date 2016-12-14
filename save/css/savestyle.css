@@ -14,6 +14,7 @@ nav a {
     color: white;
     
     
+    
 }
 
 
@@ -69,8 +70,7 @@ nav a {
     }
 .page-header {
     
-    background-size:contain, cover;
-    background-position:right, center;
+
     background-repeat: no-repeat;
     width: 100%;
     
@@ -78,7 +78,7 @@ nav a {
 
 footer{
     background-color: #aa0000;
-    width: 100%;
+    
     display: flex;
     list-style-type: none;
     margin: 0 0 0 0;
@@ -95,6 +95,12 @@ footer a:visited{
         color: #002255;
     }
 
+.planningimg{
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+}
+
 
 
 
@@ -110,34 +116,59 @@ c
 
 
 /**************** Gallery-Specific CSS ****************/
-.galleftcol{
-    width: 48%;
-    margin: 5px;
+#gallery{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
 }
 
-.galrightcol{
-    width: 48%;
-    margin: 5px;
-}
-.galleryimg{
-    display: flex;
-    width: 100%;
-    height: auto;
-    align-items: flex-end; 
-}
+.featured-video {
+		float: left;
+		display: inline-block;
+		width: 50%;
+		height: auto;
+		margin: 0 1em 1em 0;
+	}
+
+
+
+
+
 
 
 /**************** Contact-Specific CSS ****************/
 
+#page-main{
+    display: flex;
+    flex-wrap: wrap;
+}
 #page-main-contact{
     display: flex;
     flex-wrap: wrap;
     overflow:hidden;
     align-content: stretch;
     align-items: center;
+    width: 25%;
     
 }
 .contactimg{
+    
+    margin: 5px;
+    
+    
+    
+}
+.info{
+    width: 70%; 
+    margin: 5px;
+    
+    
+}
+.email{
+    width: 70%;
+    margin: 5px;
     
 }
 
@@ -160,7 +191,7 @@ c
 }
     
     #normalnav {
-    width: 100%;
+   
     display: flex;
     list-style-type: none;
     margin: 0 0 0 0;
@@ -212,7 +243,7 @@ c
 }
     
     #normalnav {
-    width: 100%;
+    
     display: flex;
     list-style-type: none;
     margin: 0 0 0 0;
