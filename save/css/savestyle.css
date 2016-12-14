@@ -102,13 +102,81 @@ footer a:visited{
 }
 
 
+/****************Index-Specific CSS ****************/
+#homeheading{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#format_index_images{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+     
+}
+
+#index-main{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tree_image{
+    margin-bottom: 5px;
+    
+}
+
+#sunset{
+    margin-bottom: 5px;
+    
+}
+
+#leftcol{
+   text-align: center; 
+}
+
+#rightcol{
+    text-align:center;
+}
+
 
 
 
 
 /****************our story-Specific CSS ****************/	
 
-c
+#contact-content{
+    width: 100%;
+}
+
+#page-main-ourstory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#formatstory{
+    font-size: 25px;
+    
+}
+
+#contact-caption{
+    text-align: center;
+}
+
+
 
 
 
@@ -121,15 +189,16 @@ c
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    margin-bottom: 5em;
     
 }
 
 .featured-video {
-		float: left;
-		display: inline-block;
+		display:flex;
+		align-content: center;
 		width: 50%;
 		height: auto;
-		margin: 0 1em 1em 0;
+		margin: 1em 1em 5em 1em;
 	}
 
 
@@ -140,36 +209,86 @@ c
 
 /**************** Contact-Specific CSS ****************/
 
-#page-main{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 #page-main-contact{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow:hidden;
-    align-content: stretch;
     align-items: center;
-    width: 25%;
+    margin-bottom: 25px;
     
 }
 .contactimg{
     
-    margin: 5px;
-    
-    
+    margin: 5px;  
     
 }
 .info{
-    width: 70%; 
-    margin: 5px;
+    text-align: center;
+    width: 100%; 
+    margin: 10px;
     
     
 }
 .email{
-    width: 70%;
-    margin: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
     
+}
+
+#format_contact_images{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#contactheading{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+/****************Shop-Specific CSS ****************/
+
+#shop_page{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#shop_page > li{
+    list-style-type: none;
+    text-align: center; 
+}
+
+#shopheading{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+ul{
+    padding: 0;
+}
+
+#shopheader{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
 }
 
 /************************************** Tablet View **************************************
@@ -205,26 +324,83 @@ c
     background-color: #bb0000; 
     }
 
-    #page-main{
-        display:flex;
-        width:100%;
-    }
+    
+    
+    
+    
+    
+/****************Index-Specific CSS ****************/
+    #index-main{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+}
     
     #leftcol{
-        width: 70%;
-        padding-right: 5px;
-        margin-top: 20px;
+        width:65%;
+        text-align: left;
+        
     }
+    
     #rightcol{
-        width:30%;
-        padding-left: 5px;
-        margin-top:10px;
+        border-radius: 25px;
+        width:35%;
+        text-align: center;
+        background-color: #002255;
+        color: white;
+    }
+    
+    #format_index_images{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
+    #tree_image{
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    }
+
+    #sunset{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    
+    }
+    
+    #steamhole{
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
   
     
     
     
     /****************our story-Specific CSS ****************/	
+    #top{
+    display: flex;
+    align-items: center;
+}
+
+.thisdream{
+    padding-right: 10px;
+}
+    
+    #contact-caption{
+        font-size: 25px;
+    }
+    
     
 }	
 
@@ -257,7 +433,25 @@ c
     background-color: #bb0000; 
     }
     
-  
+  /****************Index-Specific CSS ****************/
+    
+    #format_index_images{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+    #homeheading{
+        font-size: 80px;
+    }
+    
+    #leftcol{
+        font-size: 30px;
+        
+    }
+    #rightcol{
+        font-size: 30px;
+        
+    }
     
     
 }
