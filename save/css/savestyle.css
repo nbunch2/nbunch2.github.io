@@ -188,8 +188,9 @@ footer a:visited{
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 5em;
+    flex-wrap: wrap;
     
 }
 
